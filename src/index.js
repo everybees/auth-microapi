@@ -13,11 +13,11 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-app.use('/api/auth', authRoute);
+app.use('./routes/auth', authRoute);
 
 app.get('/', (req, res) => {
     res.json({
-        massage: "Wellcome micro-auth-api"
+        massage: "Welcome micro-auth-api"
     })
 });
 
